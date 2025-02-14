@@ -10,38 +10,10 @@
             <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa25yODczcG1obmlrc3NieHBwNHNkcTBxcTQwOHcyc2JvNjJjajN4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DxqLrg8cINwnS/giphy.gif" alt="Shy catroon dove" class="valentine-gif">
             <h1>Will you be my Valentine?</h1>
             <div class="buttons">
-                <button class="yes-btn">Yes</button>
-                <button class="no-btn">No</button>
-            </div>
+                <button class="yes-btn" onclick="window.location.href='yes.html'">Yes</button>
+                <button class="no-btn" >No</button>
+            </div> 
         </div>
-        <script>
-            const noBtn = document.querySelector('.no-btn');
-            let clickCount = 0; // Add counter
-            
-            noBtn.addEventListener('click', () => {
-                clickCount++; // Increment counter
-                
-                if (clickCount >= 3) {
-                    // Redirect after 3 attempts
-                    window.location.href = 'how-dare-you.html';
-                    return;
-                }
-                
-                // Reduce size by 10%
-                const currentScale = parseFloat(getComputedStyle(noBtn).transform.split(',')[3]) || 1;
-                const newScale = currentScale * 0.9;
-                noBtn.style.transform = `scale(${newScale})`;
-                
-                // Move to random position
-                const maxX = window.innerWidth - noBtn.offsetWidth;
-                const maxY = window.innerHeight - noBtn.offsetHeight;
-                const randomX = Math.floor(Math.random() * maxX);
-                const randomY = Math.floor(Math.random() * maxY);
-                
-                noBtn.style.position = 'fixed';
-                noBtn.style.left = randomX + 'px';
-                noBtn.style.top = randomY + 'px';
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

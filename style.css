@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 2em;
+    background-color: #fce4ec; /* Soft pink background */
 }
 
 .valentine-gif {
@@ -20,17 +21,30 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
 }
 
 .yes-btn, .no-btn {
-    background-color: #04AA6D; /* Green */
+    background-color: #ff4081; /* Pretty pink */
     border: none;
-    border-radius: 12px;
+    border-radius: 25px; /* More rounded */
     color: white;
     padding: 15px 65px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
     margin: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+}
+
+.yes-btn:hover, .no-btn:hover {
+    transform: scale(1.05);
+    background-color: #ff79b0;
+    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.3);
 }
  
