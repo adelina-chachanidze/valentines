@@ -4,9 +4,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins Light", "Poppins", sans-serif;
+    font-weight: 200;
     font-size: 2em;
-    background-color: #fce4ec; /* Soft pink background */
+    background-color: #fce4ec;
+    color: #ff6b9c;
 }
 
 .valentine-gif {
@@ -25,6 +27,9 @@ body {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+    font-family: "Poppins Light", "Poppins", sans-serif;
+    font-weight: 200;
+    color: #ff6b9c;
 }
 
 .yes-btn, .no-btn {
@@ -40,6 +45,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+    font-family: "Poppins Light", "Poppins", sans-serif;
+    font-weight: 200;
 }
 
 .yes-btn:hover, .no-btn:hover {
