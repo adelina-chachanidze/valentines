@@ -12,7 +12,7 @@ noBtn.addEventListener('click', () => {
     
     // Reduce size by 10%
     const currentScale = parseFloat(getComputedStyle(noBtn).transform.split(',')[3]) || 1;
-    const newScale = currentScale * 0.9;
+    const newScale = currentScale * 0.7;
     noBtn.style.transform = `scale(${newScale})`;
     
     // Move to random position
