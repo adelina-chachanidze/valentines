@@ -1,9 +1,36 @@
-.no-btn {
-    transition: all 0.3s ease;
-    position: relative;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
 }
 
-.buttons {
-    position: relative;
-    z-index: 1;
+.valentine-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.yes-btn, .no-btn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 65px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px;
+}
+ 
